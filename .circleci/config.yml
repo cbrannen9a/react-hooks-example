@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@4.9.0
 jobs:
   build:
     executor:
@@ -12,6 +12,6 @@ jobs:
             - run: yarn install
             - run: yarn build
 workflows:
-    build:
-      jobs:
-        - build
+  build:
+    jobs:
+      - build
